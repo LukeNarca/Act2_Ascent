@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mcm.edu.ph.act2_ascent">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Act2_Ascent">
+        <activity android:name=".WinnerWinnerChickenDinner"></activity>
+        <activity android:name=".GameOver" />
+        <activity android:name=".AxeOutcomeForest" />
+        <activity android:name=".DesicionFlashlight" />
+        <activity android:name=".FlashlightOutcomeLake" />
+        <activity android:name=".continuaton2" />
+        <activity android:name=".AxeOutcomeLake" />
+        <activity android:name=".DesicionAxe" />
+        <activity android:name=".FlashlightOuctomeForest" />
+        <activity android:name=".continuation" />
+        <activity android:name=".Desicion1" />
+        <activity android:name=".pm7" />
+        <activity android:name=".pm3" />
+        <activity android:name=".startmonolouge" />
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
