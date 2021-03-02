@@ -20,18 +20,20 @@ public class Desicion1 extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_desicion1);
         Intent intent = getIntent();
 
-        findViewById(R.id.btnflashlight).setOnClickListener(this);
-        findViewById(R.id.btnaxe).setOnClickListener(this);
+        Button flashlightOutcome = findViewById(R.id.btnflashlight);
+        flashlightOutcome.setOnClickListener(this);
+        Button axeOutcome = findViewById(R.id.btnaxe);
+        axeOutcome.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick (View view) {
        int choice;
-        TextView Story = findViewById(R.id.textView);
-        Intent next = new Intent(Desicion1.this, continuation.class);
+        Intent newshift = new Intent(this, continuation.class);
+        Intent next2 = new Intent(this, continuaton2.class);
 
-        switch (view.getId()) {
+        switch (view.getId()){
             case R.id.btnflashlight:
                 Intent intent = new Intent(this, continuation.class);
                 startActivity(intent);
@@ -41,7 +43,8 @@ public class Desicion1 extends AppCompatActivity implements View.OnClickListener
                 startActivity(intent1);
                 break;
         }
-        this.startActivity(next);
+        this.startActivity(newshift);
+        this.startActivity(next2);
     }
 
 }

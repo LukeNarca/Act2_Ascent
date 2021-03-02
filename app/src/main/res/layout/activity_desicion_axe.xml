@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0B1E37"
     tools:context=".DesicionAxe">
 
     <pl.droidsonroids.gif.GifImageView
@@ -18,19 +19,19 @@
 
 
     <Button
-        android:id="@+id/forestflashlightbtn"
+        android:id="@+id/axeforest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#078007"
         android:fontFamily="@font/almendra"
         android:text="Go to the forest"
-        app:layout_constraintBottom_toTopOf="@+id/lakeflashlightbtn"
+        app:layout_constraintBottom_toTopOf="@+id/lakeaxebtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <Button
-        android:id="@+id/lakeflashlightbtn"
+        android:id="@+id/lakeaxebtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#002570"
@@ -39,14 +40,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forestflashlightbtn" />
+        app:layout_constraintTop_toBottomOf="@+id/axeforest" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="252dp"
         android:layout_height="52dp"
         android:text="Where would you go?"
-        app:layout_constraintBottom_toTopOf="@+id/forestflashlightbtn"
+        app:layout_constraintBottom_toTopOf="@+id/axeforest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

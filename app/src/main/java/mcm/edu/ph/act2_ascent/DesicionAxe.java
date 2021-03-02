@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class DesicionAxe extends AppCompatActivity implements View.OnClickListener{
 
@@ -15,30 +14,31 @@ public class DesicionAxe extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_desicion_axe);
+        Intent intent = getIntent();
 
-        Button Flashlightoutcome = findViewById(R.id.btnflashlight);
-        Button Axeoutcome = findViewById(R.id.btnaxe);
-        Flashlightoutcome.setOnClickListener((View.OnClickListener) this);
-        Axeoutcome.setOnClickListener((View.OnClickListener) this);
+        findViewById(R.id.axeforest).setOnClickListener(this);
+        findViewById(R.id.lakeaxebtn).setOnClickListener(this);
 
     }
 
     @Override
     public void onClick (View view) {
         int choice;
-        Intent Out1 = new Intent(DesicionAxe.this, continuation.class);
+        Intent cancer = new Intent(this, AxeOutcomeForest.class);
+        Intent outerist = new Intent(this, AxeOutcomeLake.class);
 
         switch (view.getId()) {
-            case R.id.forestflashlightbtn:
-                Intent next1 = new Intent(DesicionAxe.this, AxeOutcomeForest.class);
-                startActivity(next1);
-
-
-            case R.id.lakeflashlightbtn:
-                Intent next = new Intent(DesicionAxe.this, AxeOutcomeLake.class);
-                startActivity(next);
+            case R.id.axeforest:
+                Intent chuy = new Intent(this, AxeOutcomeForest.class);
+                startActivity(chuy);
+                break;
+            case R.id.lakeaxebtn:
+                Intent chuy2 = new Intent(this, AxeOutcomeLake.class);
+                startActivity(chuy2);
                 break;
         }
+        this.startActivity(cancer);
+        this.startActivity(outerist);
 
     }
 

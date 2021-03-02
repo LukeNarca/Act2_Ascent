@@ -17,8 +17,8 @@ public class AxeOutcomeLake extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_axeoutcome_lake);
 
-        Button btnNext = findViewById(R.id.button);
-        btnNext.setOnClickListener(this);
+        findViewById(R.id.button3).setOnClickListener(this);
+
 
     }
 

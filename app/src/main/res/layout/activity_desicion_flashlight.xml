@@ -18,19 +18,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/forestflashlightbtn"
+        android:id="@+id/forestflashlight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="296dp"
         android:backgroundTint="#078007"
         android:fontFamily="@font/almendra"
         android:text="Go to the forest"
-        app:layout_constraintBottom_toTopOf="@+id/lakeflashlightbtn"
+        app:layout_constraintBottom_toTopOf="@+id/lakeaxebtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <Button
-        android:id="@+id/lakeflashlightbtn"
+        android:id="@+id/lakeflashlight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#002570"
@@ -39,18 +41,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forestflashlightbtn" />
+        app:layout_constraintTop_toBottomOf="@+id/axeforest" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="252dp"
         android:layout_height="52dp"
+        android:layout_marginTop="176dp"
         android:fontFamily="@font/almendra"
         android:text="Where would you go?"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/forestflashlightbtn"
+        app:layout_constraintBottom_toTopOf="@+id/axeforest"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

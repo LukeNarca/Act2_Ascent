@@ -17,7 +17,7 @@ public class continuaton2 extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_continuaton2);
 
-        Button btnNext = findViewById(R.id.button);
+        Button btnNext = findViewById(R.id.buttoncontinuation2);
         btnNext.setOnClickListener(this);
 
     }
@@ -29,7 +29,7 @@ public class continuaton2 extends AppCompatActivity implements View.OnClickListe
         Intent next = new Intent(continuaton2.this, DesicionAxe.class);
 
         switch (view.getId()) {
-            case R.id.button4:
+            case R.id.buttoncontinuation2:
                 if ( storymain == 1) {
                     Story.setText("You began to rush outside your tent and saw a post with another note on it that says");
                     storymain ++;

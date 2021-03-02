@@ -10,5 +10,7 @@ public class WinnerWinnerChickenDinner extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_winner_winner_chicken_dinner);
+
+
     }
 }

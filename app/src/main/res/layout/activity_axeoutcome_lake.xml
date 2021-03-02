@@ -4,13 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0B1E37"
     tools:context=".AxeOutcomeLake">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/bgnight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/lakebadending"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="316dp"
         android:layout_height="112dp"
-        android:text="TextView"
+        android:fontFamily="@font/almendra"
+        android:text="You choose the lake, you are an idiot ar you?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +35,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:layout_editor_absoluteX="159dp" />
+        android:backgroundTint="#434040"
+        android:fontFamily="@font/almendra"
+        android:text="NEXT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 </androidx.constraintlayout.widget.ConstraintLayout>

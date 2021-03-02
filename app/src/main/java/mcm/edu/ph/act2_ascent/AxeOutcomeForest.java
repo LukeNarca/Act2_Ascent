@@ -17,8 +17,7 @@ public class AxeOutcomeForest extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_axe_outcome_forest);
 
-        Button btnNext = findViewById(R.id.button);
-        btnNext.setOnClickListener(this);
+        findViewById(R.id.button2).setOnClickListener(this);
 
     }
 
@@ -26,7 +25,7 @@ public class AxeOutcomeForest extends AppCompatActivity implements View.OnClickL
     public void onClick (View view) {
 
         TextView Story = findViewById(R.id.textView5);
-        Intent next = new Intent(AxeOutcomeForest.this, GameOver.class);
+        Intent bago = new Intent(AxeOutcomeForest.this, GameOver.class);
 
         switch (view.getId()) {
             case R.id.button2:
@@ -39,10 +38,11 @@ public class AxeOutcomeForest extends AppCompatActivity implements View.OnClickL
                     story ++;
                 }
                 else if ( story == 3) {
-                    startActivity(next);
+                    startActivity(bago);
                 }
                 break;
         }
+        this.startActivity(bago);
 
     }
 

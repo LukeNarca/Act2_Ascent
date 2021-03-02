@@ -26,7 +26,7 @@
         android:text="So, you wanna go to the forest, your rules man"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/forestflashlightbtn"
+        app:layout_constraintBottom_toTopOf="@+id/axeforest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
