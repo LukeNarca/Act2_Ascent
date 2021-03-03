@@ -30,8 +30,7 @@ public class Desicion1 extends AppCompatActivity implements View.OnClickListener
     @Override
     public void onClick (View view) {
        int choice;
-        Intent newshift = new Intent(this, continuation.class);
-        Intent next2 = new Intent(this, continuaton2.class);
+        Intent next = new Intent(this, continuation.class);
 
         switch (view.getId()){
             case R.id.btnflashlight:
@@ -43,8 +42,7 @@ public class Desicion1 extends AppCompatActivity implements View.OnClickListener
                 startActivity(intent1);
                 break;
         }
-        this.startActivity(newshift);
-        this.startActivity(next2);
+
     }
 
 }

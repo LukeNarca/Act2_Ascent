@@ -24,8 +24,8 @@ public class DesicionAxe extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onClick (View view) {
         int choice;
-        Intent cancer = new Intent(this, AxeOutcomeForest.class);
-        Intent outerist = new Intent(this, AxeOutcomeLake.class);
+        Intent alright = new Intent(this, AxeOutcomeForest.class);
+
 
         switch (view.getId()) {
             case R.id.axeforest:
@@ -37,8 +37,8 @@ public class DesicionAxe extends AppCompatActivity implements View.OnClickListen
                 startActivity(chuy2);
                 break;
         }
-        this.startActivity(cancer);
-        this.startActivity(outerist);
+
+
 
     }
 

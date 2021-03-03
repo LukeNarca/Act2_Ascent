@@ -40,6 +40,7 @@ public class FlashlightOuctomeForest extends AppCompatActivity implements View.O
                 }
                 else if ( story == 3) {
                     Story.setText("As of the notes he was just pranking you to make you feel scared. They were just chilling beside the lake waiting for you to wake up because they did not want to disturb your slumber. ");
+                    story ++;
                 }
                 else if ( story == 4) {
                     startActivity(next);

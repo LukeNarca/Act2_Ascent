@@ -46,6 +46,7 @@ public class FlashlightOutcomeLake extends AppCompatActivity implements View.OnC
                 }
                 else if (story == 5) {
                     Story.setText("As of the notes they were just pranking you to make you feel scared.");
+                    story ++;
                 }
                 else if ( story == 6) {
                     startActivity(next);

@@ -26,7 +26,7 @@ public class AxeOutcomeLake extends AppCompatActivity implements View.OnClickLis
     public void onClick (View view) {
 
         TextView Story = findViewById(R.id.textView6);
-        Intent next = new Intent(AxeOutcomeLake.this, GameOver.class);
+        Intent next = new Intent(this, GameOver.class);
 
         switch (view.getId()) {
             case R.id.button3:

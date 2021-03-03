@@ -25,8 +25,8 @@ public class DesicionFlashlight extends AppCompatActivity implements View.OnClic
     @Override
     public void onClick (View view) {
         int choice;
-        Intent yawaka = new Intent(DesicionFlashlight.this, FlashlightOuctomeForest.class);
-        Intent amaw = new Intent(DesicionFlashlight.this, FlashlightOuctomeForest.class);
+        Intent ayt = new Intent(DesicionFlashlight.this, FlashlightOuctomeForest.class);
+
 
 
         switch (view.getId()) {
@@ -39,8 +39,7 @@ public class DesicionFlashlight extends AppCompatActivity implements View.OnClic
                 startActivity(next2);
                 break;
         }
-        this.startActivity(yawaka);
-        this.startActivity(amaw);
+
 
     }
 

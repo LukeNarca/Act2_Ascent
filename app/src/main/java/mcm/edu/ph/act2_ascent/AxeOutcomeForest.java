@@ -42,7 +42,7 @@ public class AxeOutcomeForest extends AppCompatActivity implements View.OnClickL
                 }
                 break;
         }
-        this.startActivity(bago);
+
 
     }
 

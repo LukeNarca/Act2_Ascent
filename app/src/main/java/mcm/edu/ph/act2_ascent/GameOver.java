@@ -13,16 +13,18 @@ public class GameOver extends AppCompatActivity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_over);
+
         Button resetgame = findViewById(R.id.btnplayagain);
         resetgame.setOnClickListener(this);
 
     }
     @Override
-    public void onClick (View v) {
+    public void onClick (View view) {
+
 
         Intent restart = new Intent(GameOver.this, Splashscreen.class);
 
-        switch (v.getId()) {
+        switch (view.getId()) {
             case R.id.btnplayagain:
             startActivity(restart);
             break;
